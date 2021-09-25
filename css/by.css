@@ -1,0 +1,99 @@
+body{
+	margin:0;
+	padding:20px;
+	font-family: sans-serif;
+    background-image:url(../backgrounds/img2.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:24px;
+  color: #222;
+  font-weight: bold;
+  background-color: white;
+}
+
+.table th{
+	background-color: darkblue;
+	color:#ffffff;
+}
+
+.table tbody tr:nth-child(even){
+	background-color: #f5f5f5;
+}
+
+/*responsive*/
+
+@media(max-width: 500px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+
+.btn{
+   font:bold 25px Verdana;
+   text-decoration: none;
+   align-self: center;
+    color: darkblue; 
+    border: 4px solid darkblue;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    transition: background .5s, color .5;
+}
+
+.btn:hover{
+    background: darkblue;
+    color: aqua;
+}
+.tx{
+    background-color: #ddd;
+    font-family:'Open Sans', sans-serif;
+	text-align: center;
+    align-content: center;
+    font-size: 26px;
+
+}
+
+
+
+
+

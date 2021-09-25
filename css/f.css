@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans&display=swap');
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+margin:0;
+min-height:100vh;
+background-image:url(../img/in.png);
+background-size:cover;
+background-position:center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+h1{
+	position: relative;
+	font-size:32px;
+	background-color: white;
+	text-align: center;
+	font-family:'Open Sans', sans-serif;
+}
+h2{
+  font-size:26px;
+  text-align: center;
+  font-family:'Open Sans', sans-serif;
+
+}
+div{
+	align-items: center;
+	width: 600px;
+	background-color: white;
+	font-size: 16px;
+	font-family:'Open Sans', sans-serif;
+	text-align: justify all;
+}
